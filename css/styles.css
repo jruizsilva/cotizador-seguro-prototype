@@ -1,0 +1,214 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: #f9f6f7;
+  font-family: "Raleway", sans-serif;
+}
+
+.secure {
+  max-width: 450px;
+  margin: 0 auto;
+  border: 1px solid #216baf;
+}
+
+.secure .secure-title {
+  margin: 0;
+  font-size: 18px;
+  padding: 8px;
+  background-color: #216baf;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.secure p {
+  margin: 8px 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.secure p .secure-bold {
+  font-weight: 600;
+}
+
+.error {
+  max-width: 450px;
+  margin: 0 auto;
+  border: 1px solid #c02739;
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 8px;
+}
+
+.error .error-paragraph {
+  color: #c02739;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+
+.cotizando {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.cotizando .spinner {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  border: 1px solid #216baf;
+  border-left: transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: girar 1200ms linear infinite;
+          animation: girar 1200ms linear infinite;
+}
+
+@-webkit-keyframes girar {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes girar {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.cotizando .cargando {
+  max-width: 450px;
+  margin: 0 auto;
+  border: 1px solid #09814bec;
+  background-color: rgba(0, 255, 0, 0.1);
+  padding: 8px;
+}
+
+.cotizando .cargando .cargando-paragraph {
+  color: #09814bec;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+
+.header {
+  background-color: #13293d;
+  padding: 16px;
+  margin-bottom: 32px;
+}
+
+.header .title {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.main .form {
+  max-width: 450px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 48px;
+}
+
+.main .form .campo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+.main .form .campo .label {
+  -ms-flex-preferred-size: 80px;
+      flex-basis: 80px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main .form .campo .select {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.main .form h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main .form .container-radio-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.main .form .container-radio-btn .campo-radio .label-radio {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 3px;
+}
+
+.main .form .submit {
+  background-color: #13293d;
+  padding: 8px 32px;
+  color: white;
+  border: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: 500;
+}
+
+.main .form .submit:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */

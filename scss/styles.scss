@@ -1,0 +1,169 @@
+@import "variables";
+
+html {
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+body {
+	background-color: $light-white;
+	font: {
+		family: $fuente;
+	}
+}
+// template -> Secure HTML para JS
+.secure {
+	max-width: 450px;
+	margin: 0 auto;
+	border: 1px solid $light-blue;
+	.secure-title {
+		margin: 0;
+		font-size: 18px;
+		padding: 8px;
+		background-color: $light-blue;
+		color: white;
+		text: {
+			align: center;
+			transform: uppercase;
+		}
+	}
+	p {
+		margin: 8px 0;
+		text-align: center;
+		text-transform: capitalize;
+		.secure-bold {
+			font-weight: 600;
+		}
+	}
+}
+// template -> Error HTML para JS
+.error {
+	max-width: 450px;
+	margin: 0 auto;
+	border: 1px solid $light-red;
+	background-color: $bg-light-red;
+	padding: 8px;
+	.error-paragraph {
+		color: $light-red;
+		font-size: 16px;
+		font-weight: 500;
+		text-align: center;
+		margin: 0;
+	}
+}
+
+.cotizando {
+	max-width: 450px;
+	margin: 0 auto;
+	.spinner {
+		margin: 0 auto;
+		margin-bottom: 32px;
+		border: 1px solid $light-blue;
+		border-left: transparent;
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		animation: girar 1200ms linear infinite;
+	}
+	@keyframes girar {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+	.cargando {
+		max-width: 450px;
+		margin: 0 auto;
+		border: 1px solid $light-green;
+		background-color: $bg-light-green;
+		padding: 8px;
+		.cargando-paragraph {
+			color: $light-green;
+			font-size: 16px;
+			font-weight: 500;
+			text-align: center;
+			margin: 0;
+		}
+	}
+}
+
+.header {
+	background-color: $dark-blue;
+	padding: 16px;
+	margin-bottom: 32px;
+	.title {
+		color: white;
+		text-align: center;
+		margin: 0;
+	}
+}
+.main {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 32px;
+	.form {
+		max-width: 450px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 48px;
+		.campo {
+			display: flex;
+			align-items: center;
+			margin-bottom: 16px;
+			.label {
+				flex: {
+					basis: 80px;
+					shrink: 0;
+					grow: 0;
+				}
+				text: {
+					transform: uppercase;
+				}
+				font: {
+					weight: bold;
+				}
+			}
+			.select {
+				padding: 8px;
+				width: 100%;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+			}
+		}
+		h2 {
+			text-align: center;
+			text-transform: uppercase;
+		}
+		.container-radio-btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 16px;
+			margin-bottom: 24px;
+			.campo-radio {
+				.label-radio {
+					font-weight: 500;
+					text-transform: uppercase;
+					margin-right: 3px;
+				}
+			}
+		}
+		.submit {
+			background-color: $dark-blue;
+			padding: 8px 32px;
+			color: white;
+			border: 0;
+			align-self: center;
+			font-weight: 500;
+		}
+		.submit:hover {
+			cursor: pointer;
+		}
+	}
+}

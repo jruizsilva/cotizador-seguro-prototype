@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cotizar Seguro</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<div class="container-secure">
+			<header class="header">
+				<h1 class="title">Cotiza tu seguro de auto</h1>
+			</header>
+			<main class="main" id="main">
+				<form action="#" class="form" id="formulario">
+					<div class="campo">
+						<label for="marca" class="label">Marca: </label>
+						<select name="marca" id="marca" class="select">
+							<option value="">- Seleccionar -</option>
+							<option value="europeo">Europeo</option>
+							<option value="americano">Americano</option>
+							<option value="asiatico">Asiatico</option>
+						</select>
+					</div>
+					<div class="campo">
+						<label for="year" class="label">Año: </label>
+						<select name="year" id="year" class="select"></select>
+					</div>
+					<h2>Tipo Seguro</h2>
+					<div class="container-radio-btn">
+						<div class="campo-radio">
+							<label for="basico" class="label-radio">Basico</label>
+							<input
+								type="radio"
+								name="seguro"
+								id="basico"
+								value="basico"
+								class="radio"
+								checked
+							/>
+						</div>
+						<div class="campo-radio">
+							<label for="completo" class="label-radio">Completo</label>
+							<input
+								type="radio"
+								name="seguro"
+								id="completo"
+								value="completo"
+								class="radio"
+							/>
+						</div>
+					</div>
+					<button type="submit" class="submit" id="submit">
+						Cotizar Seguro
+					</button>
+				</form>
+			</main>
+		</div>
+		<template id="template-secure">
+			<div class="secure" id="secure">
+				<h2 class="secure-title">Tu resumen</h2>
+				<p>
+					<span class="secure-bold">Marca: </span
+					><span class="secure-marca" id="secure-marca"></span>
+				</p>
+				<p>
+					<span class="secure-bold">Año: </span
+					><span class="secure-year" id="secure-year"></span>
+				</p>
+				<p>
+					<span class="secure-bold">Tipo: </span
+					><span class="secure-tipo" id="secure-tipo"></span>
+				</p>
+				<p>
+					<span class="secure-bold">Total: </span
+					><span class="secure-total" id="secure-total"></span>
+				</p>
+			</div>
+		</template>
+		<template id="template-error">
+			<div class="error" id="error">
+				<p class="error-paragraph">Todos los campos son obligatorios.</p>
+			</div>
+		</template>
+		<template id="template-cotizando">
+			<div class="cotizando" id="cotizando">
+				<div class="spinner"></div>
+				<div class="cargando">
+					<p class="cargando-paragraph">Cotizando...</p>
+				</div>
+			</div>
+		</template>
+		<script src="js/app.js"></script>
+	</body>
+</html>
